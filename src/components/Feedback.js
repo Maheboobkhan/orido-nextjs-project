@@ -22,9 +22,9 @@ const Feedback = ({ dark }) => {
             </h3>
           </div>
           <div className="testimonials_in">
-            {feedbackData.map((data)=>{
+            {feedbackData.map((data, i)=>{
               return (
-                <div className="testimonial">
+                <div className="testimonial" key={i}>
                   {/* <img src={`img/testimonials/${dark ? 2 : 1}.jpg`} alt="" /> */}
             <img src={data.image.url} alt="" />
             <div className="info">

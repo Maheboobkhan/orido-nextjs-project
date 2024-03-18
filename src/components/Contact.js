@@ -76,7 +76,7 @@ const Contact = () => {
           <ul>
             {socialHandles.map((handle, i) => {
               return (
-                <li>
+                <li key={i}>
                   <a href="#">
                     <img className="svg" src={handle.image.url} alt={handle.platform} />
                   </a>
